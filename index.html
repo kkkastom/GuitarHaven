@@ -1,11 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jam.Show</title>
+    <title>Guitar Haven - Гитары и все, что с ними связано</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="images/main/logofavicon.ico">
 </head>
+
 <body>
-    
+    <main>
+        <header>
+            <div class="container header-container">
+                <img src="images/main/logo.svg" alt="logo">
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="">Главная</a></li>
+                        <li><a href="">О нас</a></li>
+                        <li><a href="">Доставка</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-right">
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Поиск в каталоге...">
+                    </div>
+
+                    <div class="header-icons">
+                        <a href="#"><img src="images/main/favorite.svg" alt="favorite"></a>
+                        <a href="#"><img src="images/main/account.svg" alt="account"></a>
+                        <a href="#"><img src="images/main/headercart.svg" alt="headercart"></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="cover-section">
+            <div class="cover-content">
+                <h1>Скидка 30% на вашу первую покупку!</h1>
+                <p>Откройте для себя нашу первоклассную коллекцию гитар и музыкального оборудования</p>
+                <a href="#"><button class="cta-button">Перейти в каталог</button></a>
+            </div>
+        </section>
+        <section class="container">
+            <h2>Хиты этого месяца</h2>
+            <div class="tabs">
+                <button class="tab-button active" data-category="electric">Электро</button>
+                <button class="tab-button" data-category="acoustic">Акустика</button>
+                <button class="tab-button" data-category="amplifiers">Усилители</button>
+                <button class="tab-button" data-category="pedals">Педали</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/main/card1cover.png" alt="Electric Guitar">
+                    <span class="product-badge">Бестселлер</span>
+                </div>
+                <div class="product-details">
+                    <h3 class="product-title">Ibanez гитара крутая</h3>
+                    <p class="product-subtitle">Честно классная гитара</p>
+                    <div class="product-footer">
+                        <div class="product-price">₽32 330</div>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/main/card2cover.png" alt="Electric Guitar">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-title">Не гитара</h3>
+                    <p class="product-subtitle">Но тоже крутая</p>
+                    <div class="product-footer">
+                        <div class="product-price">₽10 990</div>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/main/card3cover.png" alt="Electric Guitar">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-title">Педалька перегруза</h3>
+                    <p class="product-subtitle">Чтоб рэперы боялись</p>
+                    <div class="product-footer">
+                        <div class="product-price">₽9 990</div>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/main/card4cover.png" alt="Electric Guitar">
+                    <span class="product-badge sale">-15%</span>
+                </div>
+                <div class="product-details">
+                    <h3 class="product-title">Струны</h3>
+                    <p class="product-subtitle">Рви наздоровье</p>
+                    <div class="product-footer">
+                        <div>
+                            <span class="product-price">₽1 490</span>
+                            <span class="old-price">₽1 990</span>
+                        </div>
+                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="container about-container">
+                <div class="about-content">
+                    <h2>Кто мы такие?</h2>
+                    <p>Основанная в 2015 году компания Guitar Haven превратилась из небольшого местного магазина в
+                        одного из самых надежных онлайн-продавцов гитар в стране.</p>
+                    <p>Наша миссия - предоставлять музыкантам высококачественные инструменты по доступным ценам при
+                        исключительном обслуживании клиентов.</p>
+                    <p>Все наши гитары перед отправкой проходят тщательную проверку, чтобы гарантировать, что вы
+                        получите только самое лучшее</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="delivery-section">
+            <div class="container">
+                <h2 class="section-title">Доставка и оплата</h2>
+
+                <div class="delivery-options">
+                    <div class="delivery-card">
+                        <div class="delivery-icon">
+                            <img src="images/main/cart.svg" alt="">
+                        </div>
+                        <h3>Самовывоз</h3>
+                        <p>Бесплатно</p>
+                        <p>Готов к получению в течение 1–2 рабочих дней</p>
+                        <p>Можно забрать в фирменном магазине GUITAR HAVEN</p>
+                    </div>
+
+                    <div class="delivery-card">
+                        <div class="delivery-icon">
+                            <img src="images/main/delivery.svg" alt="">
+                        </div>
+                        <h3>Курьерские службы</h3>
+                        <p>Cтоимость рассчитывается по тарифам службы и адресу</p>
+                        <p>2–7 рабочих дней в зависимости от региона</p>
+                        <p>Трек-номер предоставляется после отправки</p>
+                    </div>
+
+                    <div class="delivery-card">
+                        <div class="delivery-icon">
+                            <img src="images/main/courier.svg" alt="">
+                        </div>
+                        <h3>Курьер до двери</h3>
+                        <p>500 ₽ в пределах МКАД / Бесплатно при заказе от 5 000 ₽</p>
+                        <p>В день заказа или на следующий день (по договорённости)</p>
+                        <p>Время и адрес доставки уточняется при подтверждении заказа </p>
+                    </div>
+                </div>
+
+                <div class="payment-methods">
+                    <h3>Способы оплаты</h3>
+                    <div class="payment-icons">
+                        <div class="payment-method">
+                            <img src="images/main/creditcard.svg" alt="">
+                        </div>
+                        <div class="payment-method">
+                            <img src="images/main/SPB.svg" alt="">
+                        </div>
+                        <div class="payment-method">
+                            <img src="images/main/cash.svg" alt="">
+                        </div>
+                        <div class="payment-method">
+                            <img src="images/main/credit.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts-section">
+            <div class="container contacts-container">
+                <div class="contact-info">
+                    <h2 class="section-title">Контакты</h2>
+                    <div>
+                        <h3>Адрес магазина</h3>
+                        <div class="contact-detail">
+                            <span>г. Москва, ул. Пушкина, д. Колотушкина, кв. Петрова</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Контактные данные</h3>
+                        <div class="contact-detail">
+                            <span>+7 (800) 555-3535</span>
+                        </div>
+                        <div class="contact-detail">
+                            <span>info@megaaboba.com</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3>Часы работы</h3>
+                        <div class="contact-detail">
+                            <span>Пн-пт: 9:00 - 20:00</span>
+                        </div>
+                        <div class="contact-detail">
+                            <span>Сб-вс: 10:00 - 18:00</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3>Следите за нами в соцсетях!</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><img src="images/main/VK.svg" alt=""></a>
+                            <a href="#" class="social-link"><img src="images/main/telegram.svg" alt=""></a>
+                            <a href="#" class="social-link"><img src="images/main/youtube.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.373789429765!2d37.618423315930474!3d55.751633980553156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a738fa419%3A0x7c347d506f52311f!2sRed%20Square!5e0!3m2!1sen!2sru!4v1623256789012!5m2!1sen!2sru"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="footer-grid">
+                    <div>
+                        <div class="footer-logo">
+                            <img src="images/main/logofooter.svg" alt="">
+                        </div>
+                        <p class="footer-description">ИП Жмышенко Валерий Альбертович</p>
+                    </div>
+
+                    <div>
+                        <h3>Навигация</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Доставка и оплата</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3>Каталог</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Гитары</a></li>
+                            <li><a href="#">Усилители</a></li>
+                            <li><a href="#">Педали эффектов</a></li>
+                            <li><a href="#">Аксессуары</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3>Контакты</h3>
+                        <ul class="footer-links">
+                            <li>г. Москва, ул. Пушкина,<br>д. Колотушкина, кв.
+                                Петрова</li>
+                            <li>+7 (800) 555-3535</li>
+                            <li>info@Aboba.com</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>Сайт выполнен в рамках учебного проекта</p>
+                </div>
+            </div>
+        </footer>
+
+    </main>
 </body>
+
 </html>
