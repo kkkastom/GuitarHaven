@@ -10,91 +10,624 @@
 </head>
 
 <body>
-    <main>
-        <header>
-            <div class="container header-container">
-                <a href="index.html"><img src="images/main/logo.svg" alt="logo"></a>
-                <nav>
-                    <ul class="nav-links">
-                        <li><a href="index.html">Главная</a></li>
-                        <li><a href="index.html">О нас</a></li>
-                        <li><a href="index.html">Доставка</a></li>
-                        <li><a href="index.html">Контакты</a></li>
-                    </ul>
-                </nav>
 
-                <div class="header-right">
-                    <div class="search-container">
-                        <input type="text" class="search-input" placeholder="Поиск в каталоге...">
-                        <img src="images/main/loop.svg" alt="" class="search-icon">
-                    </div>
+    <header>
+        <div class="container header-container">
+            <a href="index.html"><img src="images/main/logo.svg" alt="logo"></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="index.html">О нас</a></li>
+                    <li><a href="index.html">Доставка</a></li>
+                    <li><a href="index.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Поиск в каталоге...">
+                    <img src="images/main/loop.svg" alt="" class="search-icon">
+                </div>
 
-                    <div class="header-icons">
-                        <a href="#"><img src="images/main/favorite.svg" alt="favorite"></a>
-                        <a href="#"><img src="images/main/account.svg" alt="account"></a>
-                        <a href="#"><img src="images/main/headercart.svg" alt="headercart"></a>
-                    </div>
+                <div class="header-icons">
+                    <a href="#"><img src="images/main/favorite.svg" alt="favorite"></a>
+                    <a href="#"><img src="images/main/account.svg" alt="account"></a>
+                    <a href="#"><img src="images/main/headercart.svg" alt="headercart"></a>
                 </div>
             </div>
-        </header>
-        <div class="filters">
-            
         </div>
-
-
-
-
-
-
-
-
-        <footer>
-            <div class="container">
-                <div class="footer-grid">
-                    <div>
-                        <div class="footer-logo">
-                            <img src="images/main/logofooter.svg" alt="">
-                        </div>
-                        <p class="footer-description">ИП Жмышенко Валерий Альбертович</p>
+    </header>
+    <main class="container">
+        <!-- Фильтры -->
+        <section class="filter">
+            <div class="filter-section">
+                <div class="filter-header">Специальные предложения</div>
+                <div class="filter-options">
+                    <div class="filter-option">
+                        <label>
+                            <input type="checkbox">
+                            <span>Скидки</span>
+                        </label>
                     </div>
-
-                    <div>
-                        <h3>Навигация</h3>
-                        <ul class="footer-links">
-                            <li><a href="#">Каталог</a></li>
-                            <li><a href="#">О нас</a></li>
-                            <li><a href="#">Доставка и оплата</a></li>
-                            <li><a href="#">Контакты</a></li>
-                        </ul>
+                    <div class="filter-option">
+                        <label>
+                            <input type="checkbox">
+                            <span>Рассрочка</span>
+                        </label>
                     </div>
-
-                    <div>
-                        <h3>Каталог</h3>
-                        <ul class="footer-links">
-                            <li><a href="#">Гитары</a></li>
-                            <li><a href="#">Усилители</a></li>
-                            <li><a href="#">Педали эффектов</a></li>
-                            <li><a href="#">Аксессуары</a></li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h3>Контакты</h3>
-                        <ul class="footer-links">
-                            <li>г. Москва, ул. Пушкина,<br>д. Колотушкина, кв.
-                                Петрова</li>
-                            <li>+7 (800) 555-3535</li>
-                            <li>info@Aboba.com</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="footer-bottom">
-                    <p>Сайт выполнен в рамках учебного проекта</p>
                 </div>
             </div>
-        </footer>
+
+            <div class="filter-section">
+                <div class="filter-header">Срок получения</div>
+                <div class="filter-options">
+                    <div class="filter-option">
+                        <label>
+                            <input type="checkbox" name="delivery" checked>
+                            <span>Неважно</span>
+                        </label>
+                    </div>
+                    <div class="filter-option">
+                        <label>
+                            <input type="checkbox" name="delivery">
+                            <span>В течение 2-х часов</span>
+                        </label>
+                    </div>
+                    <div class="filter-option">
+                        <label>
+                            <input type="checkbox" name="delivery">
+                            <span>Сегодня или завтра</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-header">Бренды</div>
+                <div class="filter-options">
+                    <div class="filter-option">
+                        <label>
+                            <input type="checkbox">
+                            <span>Gibson</span>
+                        </label>
+                    </div>
+                    <div class="filter-option">
+                        <label>
+                            <input type="checkbox">
+                            <span>Fender</span>
+                        </label>
+                    </div>
+                    <div class="filter-option">
+                        <label>
+                            <input type="checkbox">
+                            <span>Ibanez</span>
+                        </label>
+                    </div>
+                    <div class="filter-option">
+                        <label>
+                            <input type="checkbox">
+                            <span>Yamaha</span>
+                        </label>
+                    </div>
+                    <div class="filter-option">
+                        <label>
+                            <input type="checkbox">
+                            <span>Epiphone</span>
+                        </label>
+                    </div>
+                    <div class="filter-option">
+                        <label>
+                            <input type="checkbox">
+                            <span>Squier</span>
+                        </label>
+                    </div>
+                    <div class="filter-option">
+                        <label>
+                            <input type="checkbox">
+                            <span>Cort</span>
+                        </label>
+                    </div>
+                    <div class="filter-option">
+                        <label>
+                            <input type="checkbox">
+                            <span>Zombie</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-header">Ориентация</div>
+                <div class="filter-options">
+                    <div class="filter-option">
+                        <label>
+                            <input type="checkbox">
+                            <span>Правосторонняя</span>
+                        </label>
+                    </div>
+                    <div class="filter-option">
+                        <label>
+                            <input type="checkbox">
+                            <span>Левосторонняя</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-header">Форма корпуса</div>
+                <div class="filter-options">
+                    <div class="filter-option">
+                        <label>
+                            <input type="checkbox">
+                            <span>Stratocaster</span>
+                        </label>
+                    </div>
+                    <div class="filter-option">
+                        <label>
+                            <input type="checkbox">
+                            <span>Superstrat</span>
+                        </label>
+                    </div>
+                    <div class="filter-option">
+                        <label>
+                            <input type="checkbox">
+                            <span>Mustang</span>
+                        </label>
+                    </div>
+                    <div class="filter-option">
+                        <label>
+                            <input type="checkbox">
+                            <span>SG</span>
+                        </label>
+                    </div>
+                    <div class="filter-option">
+                        <label>
+                            <input type="checkbox">
+                            <span>Iceman</span>
+                        </label>
+                    </div>
+                    <div class="filter-option">
+                        <label>
+                            <input type="checkbox">
+                            <span>Jag-Stag</span>
+                        </label>
+                    </div>
+                    <div class="filter-option">
+                        <label>
+                            <input type="checkbox">
+                            <span>Les Paul</span>
+                        </label>
+                    </div>
+                    <div class="filter-option">
+                        <label>
+                            <input type="checkbox">
+                            <span>Telecaster</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-header">Количество струн</div>
+                <div class="filter-options">
+                    <div class="filter-option">
+                        <label>
+                            <input type="checkbox">
+                            <span>6</span>
+                        </label>
+                    </div>
+                    <div class="filter-option">
+                        <label>
+                            <input type="checkbox">
+                            <span>7</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-header">Тип звукоснимателей</div>
+                <div class="filter-options">
+                    <div class="filter-option">
+                        <label>
+                            <input type="checkbox">
+                            <span>Сингл</span>
+                        </label>
+                    </div>
+                    <div class="filter-option">
+                        <label>
+                            <input type="checkbox">
+                            <span>Хамбакер</span>
+                        </label>
+                    </div>
+                    <div class="filter-option">
+                        <label>
+                            <input type="checkbox">
+                            <span>Хот-рейлс</span>
+                        </label>
+                    </div>
+                    <div class="filter-option">
+                        <label>
+                            <input type="checkbox">
+                            <span>Пикап</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-header">Цена (в рублях)</div>
+                <input type="range" min="18495" max="172990" value="50000" class="price-slider">
+                <div class="price-range">
+                    <span>18,495 ₽</span>
+                    <span>172,990 ₽</span>
+                </div>
+                <button class="add-to-cart" style="width: 100%; margin-top: 15px;">Применить фильтры</button>
+            </div>
+        </section>
+
+        <!-- Каталог товаров -->
+        <section class="products-section">
+            <div class="breadcrumbs">
+                <a href="index.html">Главная</a> /
+                <a href="#">Каталог</a> /
+                <span>Электрогитары</span>
+            </div>
+            <h1 class="page-title">Электрогитары</h1>
+
+            <div class="products-header">
+                <div class="stock-options">
+                    <div class="filter-option">
+                        <label>
+                            <input type="checkbox" id="in-stock">
+                            <span>В наличии</span>
+                        </label>
+                    </div>
+                    <div class="filter-option">
+                        <label>
+                            <input type="checkbox" id="on-order">
+                            <span>Под заказ</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="sort-container">
+                    <span class="sort-label">Сортировка:</span>
+                    <select class="sort-select">
+                        <option>По популярности</option>
+                        <option>По цене (сначала дешевые)</option>
+                        <option>По цене (сначала дорогие)</option>
+                        <option>По новизне</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="products-grid">
+                <!-- Товар 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/cards/card1.png" alt="Электрогитара">
+                        <span class="product-badge">Хит</span>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Ibanez RG550</h3>
+                        <p class="product-subtitle">Профессиональная электрогитара</p>
+                        <div class="product-footer">
+                            <div class="product-price">32,330 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Товар 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/cards/card2.png" alt="Электрогитара">
+                        <span class="product-badge sale">Скидка</span>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Fender Stratocaster</h3>
+                        <p class="product-subtitle">Классическая американская гитара</p>
+                        <div class="product-footer">
+                            <div>
+                                <span class="product-price">45,990 ₽</span>
+                                <span class="old-price">52,500 ₽</span>
+                            </div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Товар 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/cards/card3.png" alt="Электрогитара">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Gibson Les Paul</h3>
+                        <p class="product-subtitle">Легендарная рок-гитара</p>
+                        <div class="product-footer">
+                            <div class="product-price">112,500 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Товар 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/cards/card4.png" alt="Электрогитара">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Yamaha Pacifica</h3>
+                        <p class="product-subtitle">Отличный выбор для начинающих</p>
+                        <div class="product-footer">
+                            <div class="product-price">28,750 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Товар 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/cards/card5.png" alt="Электрогитара">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Epiphone SG</h3>
+                        <p class="product-subtitle">Доступная рок-машина</p>
+                        <div class="product-footer">
+                            <div class="product-price">35,200 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Товар 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/cards/card6.png" alt="Электрогитара">
+                        <span class="product-badge">Новинка</span>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Squier Classic Vibe</h3>
+                        <p class="product-subtitle">Винтажный стиль и звучание</p>
+                        <div class="product-footer">
+                            <div class="product-price">29,900 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Товар 7 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/cards/card7.png" alt="Электрогитара">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Cort CR250</h3>
+                        <p class="product-subtitle">Универсальная производительность</p>
+                        <div class="product-footer">
+                            <div class="product-price">26,800 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Товар 8 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/cards/card8.png" alt="Электрогитара">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">ESP LTD EC-256</h3>
+                        <p class="product-subtitle">Гитара для металла</p>
+                        <div class="product-footer">
+                            <div class="product-price">38,400 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/cards/card9.png" alt="Электрогитара">
+                        <span class="product-badge">Хит</span>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Ibanez RG550</h3>
+                        <p class="product-subtitle">Профессиональная электрогитара</p>
+                        <div class="product-footer">
+                            <div class="product-price">32,330 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Товар 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/cards/card10.png" alt="Электрогитара">
+                        <span class="product-badge sale">Скидка</span>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Fender Stratocaster</h3>
+                        <p class="product-subtitle">Классическая американская гитара</p>
+                        <div class="product-footer">
+                            <div>
+                                <span class="product-price">45,990 ₽</span>
+                                <span class="old-price">52,500 ₽</span>
+                            </div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Товар 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/cards/card11.png" alt="Электрогитара">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Gibson Les Paul</h3>
+                        <p class="product-subtitle">Легендарная рок-гитара</p>
+                        <div class="product-footer">
+                            <div class="product-price">112,500 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Товар 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/cards/card12.png" alt="Электрогитара">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Yamaha Pacifica</h3>
+                        <p class="product-subtitle">Отличный выбор для начинающих</p>
+                        <div class="product-footer">
+                            <div class="product-price">28,750 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Товар 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/cards/card13.png" alt="Электрогитара">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Epiphone SG</h3>
+                        <p class="product-subtitle">Доступная рок-машина</p>
+                        <div class="product-footer">
+                            <div class="product-price">35,200 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Товар 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/cards/card14.png" alt="Электрогитара">
+                        <span class="product-badge">Новинка</span>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Squier Classic Vibe</h3>
+                        <p class="product-subtitle">Винтажный стиль и звучание</p>
+                        <div class="product-footer">
+                            <div class="product-price">29,900 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Товар 7 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/cards/card15.png" alt="Электрогитара">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Cort CR250</h3>
+                        <p class="product-subtitle">Универсальная производительность</p>
+                        <div class="product-footer">
+                            <div class="product-price">26,800 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Товар 8 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/cards/card16.png" alt="Электрогитара">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">ESP LTD EC-256</h3>
+                        <p class="product-subtitle">Гитара для металла</p>
+                        <div class="product-footer">
+                            <div class="product-price">38,400 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/cards/card17.png" alt="Электрогитара">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Cort CR250</h3>
+                        <p class="product-subtitle">Универсальная производительность</p>
+                        <div class="product-footer">
+                            <div class="product-price">26,800 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Товар 8 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/cards/card18.png" alt="Электрогитара">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">ESP LTD EC-256</h3>
+                        <p class="product-subtitle">Гитара для металла</p>
+                        <div class="product-footer">
+                            <div class="product-price">38,400 ₽</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">
+                        <img src="images/main/logofooter.svg" alt="">
+                    </div>
+                    <p class="footer-description">ИП Жмышенко Валерий Альбертович</p>
+                </div>
+
+                <div>
+                    <h3>Навигация</h3>
+                    <ul class="footer-links">
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="#aboutus">О нас</a></li>
+                        <li><a href="#delivery">Доставка и оплата</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Каталог</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Гитары</a></li>
+                        <li><a href="#">Усилители</a></li>
+                        <li><a href="#">Педали эффектов</a></li>
+                        <li><a href="#">Аксессуары</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Контакты</h3>
+                    <ul class="footer-links">
+                        <li>г. Москва, ул. Пушкина,<br>д. Колотушкина, кв.
+                            Петрова</li>
+                        <li>+7 (800) 555-3535</li>
+                        <li>info@Aboba.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Сайт выполнен в рамках учебного проекта</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
