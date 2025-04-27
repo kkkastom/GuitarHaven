@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guitar Haven - Гитары и все, что с ними связано</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" href="images/main/logofavicon.ico">
 </head>
 
@@ -27,6 +26,7 @@
                 <div class="header-right">
                     <div class="search-container">
                         <input type="text" class="search-input" placeholder="Поиск в каталоге...">
+                        <img src="images/main/loop.svg" alt="" class="search-icon">
                     </div>
 
                     <div class="header-icons">
@@ -45,7 +45,7 @@
             </div>
         </section>
         <section class="container">
-            <h2>Хиты этого месяца</h2>
+            <h2 class="section-title">Хиты этого месяца</h2>
             <div class="tabs">
                 <button class="tab-button active" data-category="electric">Электро</button>
                 <button class="tab-button" data-category="acoustic">Акустика</button>
@@ -53,69 +53,68 @@
                 <button class="tab-button" data-category="pedals">Педали</button>
             </div>
 
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/main/card1cover.png" alt="Electric Guitar">
-                    <span class="product-badge">Бестселлер</span>
-                </div>
-                <div class="product-details">
-                    <h3 class="product-title">Ibanez гитара крутая</h3>
-                    <p class="product-subtitle">Честно классная гитара</p>
-                    <div class="product-footer">
-                        <div class="product-price">₽32 330</div>
-                        <button class="add-to-cart">В корзину</button>
+            <div class="cards">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/main/card1cover.png" alt="Electric Guitar">
+                        <span class="product-badge">Бестселлер</span>
                     </div>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/main/card2cover.png" alt="Electric Guitar">
-                </div>
-                <div class="product-details">
-                    <h3 class="product-title">Не гитара</h3>
-                    <p class="product-subtitle">Но тоже крутая</p>
-                    <div class="product-footer">
-                        <div class="product-price">₽10 990</div>
-                        <button class="add-to-cart">В корзину</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/main/card3cover.png" alt="Electric Guitar">
-                </div>
-                <div class="product-details">
-                    <h3 class="product-title">Педалька перегруза</h3>
-                    <p class="product-subtitle">Чтоб рэперы боялись</p>
-                    <div class="product-footer">
-                        <div class="product-price">₽9 990</div>
-                        <button class="add-to-cart">В корзину</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="images/main/card4cover.png" alt="Electric Guitar">
-                    <span class="product-badge sale">-15%</span>
-                </div>
-                <div class="product-details">
-                    <h3 class="product-title">Струны</h3>
-                    <p class="product-subtitle">Рви наздоровье</p>
-                    <div class="product-footer">
-                        <div>
-                            <span class="product-price">₽1 490</span>
-                            <span class="old-price">₽1 990</span>
+                    <div class="product-details">
+                        <h3 class="product-title">Ibanez гитара крутая</h3>
+                        <p class="product-subtitle">Честно классная гитара</p>
+                        <div class="product-footer">
+                            <div class="product-price">₽32 330</div>
+                            <button class="add-to-cart">В корзину</button>
                         </div>
-                        <button class="add-to-cart">В корзину</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/main/card2cover.png" alt="Electric Guitar">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Не гитара</h3>
+                        <p class="product-subtitle">Но тоже крутая</p>
+                        <div class="product-footer">
+                            <div class="product-price">₽10 990</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/main/card3cover.png" alt="Electric Guitar">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Педалька перегруза</h3>
+                        <p class="product-subtitle">Чтоб рэперы боялись</p>
+                        <div class="product-footer">
+                            <div class="product-price">₽9 990</div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/main/card4cover.png" alt="Electric Guitar">
+                        <span class="product-badge sale">-15%</span>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Струны</h3>
+                        <p class="product-subtitle">Рви наздоровье</p>
+                        <div class="product-footer">
+                            <div>
+                                <span class="product-price">₽1 490</span>
+                                <span class="old-price">₽1 990</span>
+                            </div>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="about-section">
+        <section id="about-section">
             <div class="container about-container">
                 <div class="about-content">
                     <h2>Кто мы такие?</h2>
@@ -186,41 +185,42 @@
         </section>
 
         <section class="contacts-section">
+            <h2 class="section-title">Контакты</h2>
             <div class="container contacts-container">
                 <div class="contact-info">
-                    <h2 class="section-title">Контакты</h2>
                     <div>
-                        <h3>Адрес магазина</h3>
-                        <div class="contact-detail">
-                            <span>г. Москва, ул. Пушкина, д. Колотушкина, кв. Петрова</span>
+                        
+                        <div>
+                            <h3>Адрес магазина</h3>
+                            <div class="contact-detail">
+                                <span>г. Москва, ул. Пушкина, д. Колотушкина, кв. Петрова</span>
+                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <h3>Контактные данные</h3>
-                        <div class="contact-detail">
-                            <span>+7 (800) 555-3535</span>
+                        <div>
+                            <h3>Контактные данные</h3>
+                            <div class="contact-detail">
+                                <span>+7 (800) 555-3535</span>
+                            </div>
+                            <div class="contact-detail">
+                                <span>info@megaaboba.com</span>
+                            </div>
                         </div>
-                        <div class="contact-detail">
-                            <span>info@megaaboba.com</span>
+                        <div>
+                            <h3>Часы работы</h3>
+                            <div class="contact-detail">
+                                <span>Пн-пт: 9:00 - 20:00</span>
+                            </div>
+                            <div class="contact-detail">
+                                <span>Сб-вс: 10:00 - 18:00</span>
+                            </div>
                         </div>
-                    </div>
-
-                    <div>
-                        <h3>Часы работы</h3>
-                        <div class="contact-detail">
-                            <span>Пн-пт: 9:00 - 20:00</span>
-                        </div>
-                        <div class="contact-detail">
-                            <span>Сб-вс: 10:00 - 18:00</span>
-                        </div>
-                    </div>
-
-                    <div>
-                        <h3>Следите за нами в соцсетях!</h3>
-                        <div class="social-links">
-                            <a href="#" class="social-link"><img src="images/main/VK.svg" alt=""></a>
-                            <a href="#" class="social-link"><img src="images/main/telegram.svg" alt=""></a>
-                            <a href="#" class="social-link"><img src="images/main/youtube.svg" alt=""></a>
+                        <div>
+                            <h3>Следите за нами в соцсетях!</h3>
+                            <div class="social-links">
+                                <a href="#" class="social-link"><img src="images/main/VK.svg" alt=""></a>
+                                <a href="#" class="social-link"><img src="images/main/telegram.svg" alt=""></a>
+                                <a href="#" class="social-link"><img src="images/main/youtube.svg" alt=""></a>
+                            </div>
                         </div>
                     </div>
                 </div>
