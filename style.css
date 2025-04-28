@@ -449,7 +449,7 @@ footer {
 }
 
 .footer-description {
-    color: #aaa;
+    color: #929292;
     line-height: 1.6;
 }
 
@@ -468,18 +468,18 @@ footer {
 }
 
 .footer-links a {
-    color: #aaa;
+    color: #929292;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-    color: #e67e22;
+    color: #E3170A;
 }
 
 .footer-bottom {
     border-top: 1px solid #444;
     padding-top: 20px;
     text-align: center;
-    color: #aaa;
+    color: #929292;
 }

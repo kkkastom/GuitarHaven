@@ -10,9 +10,61 @@
 </head>
 
 <body>
-    <div class="container logo-container">
-        <a href="index.html"><img src="images/main/logo.svg" alt="logo"></a>
+
+    <div class="container">
+        <div class="image-side"></div>
+        
+        <div class="form-side">
+            <div class="tabs">
+                <div id="loginTab" class="tab active">Войти</div>
+                <div id="registerTab" class="tab">Регистрация</div>
+            </div>
+            
+            <form id="loginForm" class="form-container visible-form">
+                <div class="input-group">
+                    <input type="email" id="loginEmail" placeholder="Email" required>
+                </div>
+                
+                <div class="input-group">
+                    <input type="password" id="loginPassword" placeholder="Пароль" required>
+                </div>
+                
+                <a href="#" class="forgot-link">Забыли логин или пароль?</a>
+                
+                <button type="submit" class="btn">Войти</button>
+            </form>
+            
+            <form id="registerForm" class="form-container hidden-form">
+                <div class="input-group">
+                    <input type="text" id="registerName" placeholder="Имя" required>
+                </div>
+                
+                <div class="input-group">
+                    <input type="email" id="registerEmail" placeholder="Email" required>
+                </div>
+                
+                <div class="input-group">
+                    <input type="password" id="registerPassword" placeholder="Пароль" required>
+                </div>
+                
+                <div class="input-group">
+                    <input type="password" id="registerRepeatPassword" placeholder="Повторите пароль" required>
+                </div>
+                
+                <label class="checkbox-container">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" required>
+                        <span class="checkmark"></span>
+                        Я согласен со всеми положениями<br>и условиями
+                    </label>
+                </label>
+                
+                <button type="submit" class="btn">Зарегистрироваться</button>
+            </form>
+        </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
