@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-  }
+}
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -48,7 +48,7 @@ header {
 }
 
 .nav-links a:hover {
-    color: #e67e22;
+    color: #E3170A;
 }
 
 .header-right {
@@ -135,7 +135,6 @@ header {
 .section-title {
     text-align: center;
     font-size: 32px;
-    margin-bottom: 40px;
     color: #161925;
 }
 
@@ -168,8 +167,8 @@ header {
     color: #E3170A;
 }
 
-.catalog{
-    padding-bottom: 70px;
+.catalog {
+    padding: 60px;
 }
 
 .products-grid {
@@ -254,7 +253,7 @@ header {
 }
 
 .add-to-cart {
-    background-color: #e67e22;
+    background-color: #E3170A;
     color: white;
     border: none;
     padding: 5px 12px;
@@ -265,7 +264,7 @@ header {
 }
 
 .add-to-cart:hover {
-    background-color: #d35400;
+    background-color: #A60A00;
 }
 
 .about-section {
@@ -274,23 +273,36 @@ header {
     background-position: center;
     color: white;
     height: 60vh;
+    display: flex;
+    align-items: center;
 }
 
 .about-container {
+    width: 100%;
+  }
+  
+  .about-content {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     gap: 30px;
-}
-
-.about-content h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.about-content p {
-    margin-bottom: 15px;
-    font-size: 1.1rem;
-}
+  }
+  
+  .about-content h2 {
+    font-size: 64px;
+    margin: 0;
+    flex-shrink: 0;
+  }
+  
+  .about-text {
+    max-width: 778px; 
+  }
+  
+  .about-text p {
+    margin-bottom: 45px;
+    font-size: 20px;
+    font-weight: 300;
+  }
 
 .delivery-section {
     background-color: #f1f1f1;
@@ -362,7 +374,7 @@ header {
 }
 
 .contacts-section {
-    padding: 60px 0;
+    padding-bottom: 60px;
 }
 
 .contacts-container {
@@ -435,7 +447,9 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 30px;
     margin-bottom: 30px;
+    align-items: center;
 }
+
 
 .footer-logo {
     display: flex;
