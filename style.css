@@ -417,10 +417,6 @@ header {
     transition: all 0.3s ease;
 }
 
-.social-link:hover {
-    background-color: #e67e22;
-    color: white;
-}
 
 .map-container {
     flex: 1;
