@@ -24,6 +24,12 @@ body {
     background: url('images/main/reg-auto.png') no-repeat center center;
     background-size: cover;
     position: relative;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.image-side:hover {
+    opacity: 0.9;
 }
 
 .form-side {
@@ -141,6 +147,11 @@ input:focus {
     font-size: 14px;
     color: #4b5563;
     line-height: 1.4;
+    text-decoration: underline;
+}
+
+.custom-checkbox:hover {
+    color: #E3170A;
 }
 
 .custom-checkbox input {
@@ -182,4 +193,5 @@ input:focus {
     border: solid white;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
+
 }

@@ -11,43 +11,43 @@
 
 <body>
     <div class="container">
-        <div class="image-side"></div>
+        <a href="index.html" class="image-side" title="Вернуться на главную"></a>
 
         <div class="form-side">
             <div class="tabs">
-                <div id="loginTab" class="tab active">Войти</div>
-                <div id="registerTab" class="tab">Регистрация</div>
+                <div id="loginTab" class="tab active" title="если у тебя уже есть аккаунт">Войти</div>
+                <div id="registerTab" class="tab" title="если у тебя еще нет аккаунта">Регистрация</div>
             </div>
 
             <form id="loginForm" class="form-container visible-form">
                 <div class="input-group">
-                    <input type="email" id="loginEmail" placeholder="Email" required>
+                    <input type="email" id="loginEmail" placeholder="Email" title="заполни поле пожалуйста :)" required>
                 </div>
 
                 <div class="input-group">
-                    <input type="password" id="loginPassword" placeholder="Пароль" required>
+                    <input type="password" id="loginPassword" placeholder="Пароль" title="и это тоже :)" required>
                 </div>
 
-                <a href="#" class="forgot-link">Забыли логин или пароль?</a>
+                <a href="#" class="forgot-link" title="поменяй пароль и запиши его на бумажку :)">Забыли логин или пароль?</a>
 
-                <button type="submit" class="btn">Войти</button>
+                <button type="submit" class="btn" title="жмякни на меня :)">Войти</button>
             </form>
 
             <form id="registerForm" class="form-container hidden-form">
                 <div class="input-group">
-                    <input class="form-container" id="registerName" placeholder="Имя" required>
+                    <input type="text" id="registerName" placeholder="Имя" title="хотим узнать как зовут нового Джими Хендрикса" required>
                 </div>
 
                 <div class="input-group">
-                    <input type="email" id="registerEmail" placeholder="Email" required>
+                    <input type="email" id="registerEmail" placeholder="Email" title="а это чтобы иногда присылать тебе промокодики :)" required>
                 </div>
 
                 <div class="input-group">
-                    <input type="password" id="registerPassword" placeholder="Пароль" required>
+                    <input type="password" id="registerPassword" placeholder="Пароль" title="мы никому его не расскажем" required>
                 </div>
 
                 <div class="input-group">
-                    <input type="password" id="registerRepeatPassword" placeholder="Повторите пароль" required>
+                    <input type="password" id="registerRepeatPassword" placeholder="Повторите пароль"  title="но это не точно :)" required>
                 </div>
 
                 <label class="checkbox-container">
