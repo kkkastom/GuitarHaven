@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    font-size: 16px;
 }
 
 body {
@@ -9,6 +10,7 @@ body {
     background-color: #F3F4F6;
     color: #161925;
     line-height: 1.6;
+    min-width: 1024px;
 }
 
 .container {
@@ -16,6 +18,7 @@ body {
     max-width: 1556px;
     margin: 0 auto;
     padding: 0 15px;
+    box-sizing: border-box;
 }
 
 header {
@@ -31,12 +34,13 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 0;
+    height: 5rem;
 }
 
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 1.25rem;
     padding: 0;
 }
 
@@ -44,7 +48,7 @@ header {
     text-decoration: none;
     color: #161925;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.1rem;
 }
 
 .nav-links a:hover {
@@ -54,7 +58,7 @@ header {
 .header-right {
     display: flex;
     align-items: center;
-    gap: 100px;
+    gap: 6.25rem;
 }
 
 .search-container {
@@ -65,18 +69,19 @@ header {
     padding: 8px 15px 8px 35px;
     border-radius: 40px;
     border: 1px solid #161925;
-    width: 240px;
-    height: 32px;
+    width: 100%;
+    height: 2.813rem;
+    box-sizing: border-box;
+    font-size: 1rem;
 }
 
 .search-input::placeholder {
     color: #161925;
-    font-size: 15px;
 }
 
 .search-icon {
     position: absolute;
-    left: 10px;
+    left: 0.938rem;
     top: 50%;
     transform: translateY(-50%);
     color: #161925;
@@ -84,11 +89,11 @@ header {
 
 .header-icons {
     display: flex;
-    gap: 15px;
+    gap: 0.938rem;
 }
 
 .header-icons img {
-    width: 30px;
+    width: 1.875rem;
 }
 
 #cover-section {
@@ -105,13 +110,15 @@ header {
 }
 
 .cover-content h1 {
-    font-size: 64px;
-    margin-bottom: 20px;
+    font-size: 4rem;
+    margin-bottom: 1.25rem;
+    line-height: 1.2;
 }
 
 .cover-content p {
     font-size: 1.5rem;
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
+    line-height: 1.5;
 }
 
 .cta-button {
@@ -125,6 +132,7 @@ header {
     font-size: 1.1rem;
     border: none;
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .cta-button:hover {
@@ -134,21 +142,22 @@ header {
 
 .section-title {
     text-align: center;
-    font-size: 32px;
+    font-size: 2rem;
     color: #161925;
+    margin-bottom: 2rem;
 }
 
 .tabs {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-bottom: 30px;
+    gap: 0.625rem;
+    margin-bottom: 1.875rem;
     flex-wrap: wrap;
 }
 
 .cards {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
     justify-content: center;
 }
 
@@ -160,6 +169,7 @@ header {
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-size: 1rem;
 }
 
 .tab-button.active {
@@ -174,9 +184,9 @@ header {
 .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+    gap: 1.25rem;
+    padding: 0 20px;
 }
-
 
 .product-card {
     background-color: white;
@@ -193,7 +203,7 @@ header {
 
 .product-image {
     position: relative;
-    height: 200px;
+    height: 12.5rem;
     overflow: hidden;
 }
 
@@ -201,12 +211,13 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.3s;
 }
 
 .product-badge {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 0.625rem;
+    right: 0.625rem;
     background-color: #e67e22;
     color: white;
     padding: 3px 8px;
@@ -226,13 +237,14 @@ header {
 .product-title {
     font-weight: bold;
     font-size: 1.1rem;
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
 }
 
 .product-subtitle {
     color: #777;
     font-size: 0.9rem;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
+    line-height: 1.4;
 }
 
 .product-footer {
@@ -243,13 +255,14 @@ header {
 
 .product-price {
     font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .old-price {
     text-decoration: line-through;
     color: #999;
     font-size: 0.9rem;
-    margin-left: 5px;
+    margin-left: 0.5rem;
 }
 
 .add-to-cart {
@@ -285,11 +298,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 1.875rem;
   }
   
   .about-content h2 {
-    font-size: 64px;
+    font-size: 4rem;
     margin: 0;
     flex-shrink: 0;
   }
@@ -299,8 +312,8 @@ header {
   }
   
   .about-text p {
-    margin-bottom: 45px;
-    font-size: 20px;
+    margin-bottom: 2.813rem;
+    font-size: 1.25rem;
     font-weight: 300;
   }
 
@@ -343,7 +356,7 @@ header {
 
 .delivery-card p {
     color: #666;
-    margin-bottom: 5px;
+    margin-bottom: 0.625rem;
 }
 
 .payment-methods {
@@ -356,14 +369,15 @@ header {
 .payment-methods h3 {
     text-align: center;
     font-size: 1.3rem;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
+    margin-top: 0;
 }
 
 .payment-icons {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 0.938rem;
 }
 
 .payment-method {
@@ -380,7 +394,7 @@ header {
 .contacts-container {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 1.875rem;
     align-items: center;
 }
 
@@ -390,19 +404,19 @@ header {
 
 .contact-info h3 {
     font-size: 1.3rem;
-    margin-bottom: 15px;
+    margin-bottom: 0.938rem;
 }
 
 .contact-detail {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .social-links {
     display: flex;
-    gap: 15px;
-    margin-top: 20px;
+    gap: 0.938rem;
+    margin-top: 1.25rem
 }
 
 .social-link {
@@ -442,7 +456,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
     align-items: center;
 }
 
@@ -450,11 +464,11 @@ footer {
 .footer-logo {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 0.938rem;
 }
 
 .footer-logo span {
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: bold;
 }
 
@@ -465,7 +479,7 @@ footer {
 
 .footer-column h3 {
     font-size: 1.2rem;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .footer-links {
@@ -474,7 +488,7 @@ footer {
 }
 
 .footer-links li {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .footer-links a {
